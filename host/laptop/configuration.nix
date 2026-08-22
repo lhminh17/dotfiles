@@ -6,10 +6,13 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [ 
       ./hardware-configuration.nix
-      ../../modules/nixos/desktop/gnome.nix
+      ../../modules/nixos
     ];
+
+  #gnome
+  mySystem.desktop.gnome.enable = true;
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
