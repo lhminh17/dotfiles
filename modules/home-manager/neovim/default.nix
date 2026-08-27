@@ -1,0 +1,31 @@
+{  config, lib, pkgs, ... }: 
+
+with lib;
+
+let 
+  cfg = config.myHome.neovim;
+
+in 
+{
+  options.myHome.neovim = {
+    enable = mkEnableOption " config neovim ";
+  };
+
+  config = mkIf cfg.enable {
+    programs.neovim = {
+      enable = true;
+      defaultEditor = true;
+      viAlias = true;
+      vimAlias = true;
+
+      # plugin
+      plugins = with pkgs.vimPlugins; [
+        nvim-web-devicons
+	lualine-nvim
+	base16-nvim
+      ];
+
+      extraLuaConfig = builtins.readFile ./init.lua;
+    };
+  };
+}
