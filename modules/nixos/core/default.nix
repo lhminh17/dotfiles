@@ -40,7 +40,7 @@ in {
 	noto-fonts
 	nerd-fonts.iosevka
       ];
-      fontconfig.defaultFonts.monospace = [ "JetBrainsMono Nerd Font" ];
+      fontconfig.defaultFonts.monospace = [ "Iosevka Nerd Font" ];
     };
   };
 }

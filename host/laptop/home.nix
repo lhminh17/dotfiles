@@ -13,4 +13,8 @@
 
   # neovim
   myHome.neovim.enable = true;
+	# yazi
+	myHome.yazi.enable = true;
+	# ghostty
+	myHome.ghostty.enable = true;
 }

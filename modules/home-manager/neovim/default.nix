@@ -27,5 +27,14 @@ in
 
       extraLuaConfig = builtins.readFile ./init.lua;
     };
-  };
+
+		programs.bash.sessionVariables = {
+			EDITOR = "nvim";
+			VISUAL = "nvim";
+  	};
+
+		programs.zsh.sessionsVariables = {
+			EDITOR = "nvim";
+			VISUAL = "nvim";
+		};
 }
