@@ -37,4 +37,5 @@ in
 			EDITOR = "nvim";
 			VISUAL = "nvim";
 		};
+	};
 }
