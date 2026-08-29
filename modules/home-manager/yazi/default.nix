@@ -7,7 +7,7 @@ let
 in
 {
   options.myHome.yazi = {
-    enable = mkEnableOption "config yazi";
+    enable = mkEnableOption "config yazi file manager";
   };
 
   config = mkIf cfg.enable {
@@ -33,11 +33,10 @@ in
 
         open = {
           rules = [
-            { name = "*/"; use = [ "edit" "open" "reveal" ]; }
+            { name = "*"; use = [ "edit" "open" "reveal" ]; }
             { mime = "text/*"; use = [ "edit" "reveal" ]; }
-            { mime = "application/json"; use = [ "edit" "reveal" ]; }
+            { mime = "application/*json"; use = [ "edit" "reveal" ]; }
             { mime = "*/javascript"; use = [ "edit" "reveal" ]; }
-            { mime = "application/x-ndjson"; use = [ "edit" "reveal" ]; }
           ];
         };
       };

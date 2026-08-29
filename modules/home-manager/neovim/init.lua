@@ -6,15 +6,15 @@ vim.opt.cursorline = true
 
 vim.opt.tabstop = 2 
 vim.opt.shiftwidth = 2
-vim.expandtab = true
+vim.opt.expandtab = true
 
 vim.g.mapleader = " "
 
-require('base16-colorscheme').setup('black-metal-gorgoroth')
+require('base16-colorscheme').setup('nord')
 
 require('lualine').setup({
   options = {
-    theme = 'base16',
+    theme = 'Nord',
     icons_enabled = true,
     component_separators = { left = '|', right = '|' },
     section_separators = { left = '', right = ''},

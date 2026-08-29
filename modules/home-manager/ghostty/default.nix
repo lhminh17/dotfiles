@@ -13,25 +13,19 @@ in
 	config = mkIf cfg.enable {
 		programs.ghostty = {
 			enable = true;
-			settings = {
-				theme = "base16-black-metal-gorgoroth";
+
+			settings = {	
+				theme = "Nord";
+
 				window-decoration = false;
-				window-padding-x = 10;
-				window-padding-y = 10;
-				font-family = "Iosevka Nerd Font";
-				font-size = 12;
+				window-padding-x = 0;
+				window-padding-y = 0;
+				window-padding-balance = true;
 			};
 		};
 
 		home.sessionVariables = {
 			TERMINAL = "ghostty";
-		};
-
-		xdg.mimeApps = {
-			enable = true;
-			defaultApplications = {
-				" terminal " = [ "com.mitchellh.ghostty.desktop" ];
-			};
 		};
 	};
 }

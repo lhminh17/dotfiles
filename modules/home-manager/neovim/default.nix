@@ -25,7 +25,7 @@ in
 	base16-nvim
       ];
 
-      extraLuaConfig = builtins.readFile ./init.lua;
+      initLua = builtins.readFile ./init.lua;
     };
 
 		programs.bash.sessionVariables = {
@@ -33,7 +33,7 @@ in
 			VISUAL = "nvim";
   	};
 
-		programs.zsh.sessionsVariables = {
+		programs.zsh.sessionVariables = {
 			EDITOR = "nvim";
 			VISUAL = "nvim";
 		};

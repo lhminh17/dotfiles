@@ -14,7 +14,10 @@
   # neovim
   myHome.neovim.enable = true;
 	# yazi
-	myHome.yazi.enable = true;
+	myHome.yazi.enable = false;
 	# ghostty
 	myHome.ghostty.enable = true;
+  # starship
+  myHome.starship.enable = true;
+
 }

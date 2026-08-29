@@ -5,5 +5,6 @@
     ./neovim
 		./ghostty
 		./yazi
-	];
+    ./starship
+    ];
 }
