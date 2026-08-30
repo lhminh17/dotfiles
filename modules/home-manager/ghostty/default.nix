@@ -15,7 +15,7 @@ in
 			enable = true;
 
 			settings = {	
-				theme = "Nord";
+				theme = "TokyoNight";
 
 				window-decoration = false;
 				window-padding-x = 0;

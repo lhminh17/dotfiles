@@ -21,8 +21,20 @@ in
       # plugin
       plugins = with pkgs.vimPlugins; [
         nvim-web-devicons
-	lualine-nvim
-	base16-nvim
+	      lualine-nvim
+	      base16-nvim
+        
+        #telescope
+        plenary-nvim
+        telescope-nvim
+
+        #neotree
+        nvim-tree-lua
+        ];
+      
+      extraPackages = with pkgs;[
+        ripgrep
+        fd
       ];
 
       initLua = builtins.readFile ./init.lua;
