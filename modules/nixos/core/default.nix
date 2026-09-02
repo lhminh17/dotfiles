@@ -36,11 +36,12 @@ in {
     # fonts 
     fonts = {
       packages = with pkgs; [
-        nerd-fonts.jetbrains-mono
-	noto-fonts
-	nerd-fonts.iosevka
+        nerd-fonts.jetbrains-mono 
+      	noto-fonts
+	      nerd-fonts.iosevka
+        nerd-fonts.comic-shanns-mono
       ];
-      fontconfig.defaultFonts.monospace = [ "JetBrainsMono Nerd Font Mono" ];
+      fontconfig.defaultFonts.monospace = [ "ComicShannsMono Nerd Font" ];
     };
   };
 }

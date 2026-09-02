@@ -17,6 +17,8 @@ in
 			settings = {	
 				theme = "TokyoNight";
 
+        font-family = "ComicShannsMono Nerd Font";
+
 				window-decoration = false;
 				window-padding-x = 0;
 				window-padding-y = 0;
