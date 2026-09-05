@@ -15,7 +15,7 @@ in
 			enable = true;
 
 			settings = {	
-				theme = "Gruvbox Dark";
+				theme = "Everforest Dark Hard";
 
         font-family = "ComicShannsMono Nerd Font";
 

@@ -24,13 +24,14 @@ in {
 
     #environment variables
     environment.systemPackages = with pkgs; [
-	neovim
-	git
-	firefox
-	ghostty
-	fastfetch
-	wl-clipboard
-	yazi
+	    neovim
+	    git
+	    firefox
+	    ghostty
+	    fastfetch
+	    wl-clipboard
+	    yazi
+      sioyek
     ];
 
     # fonts 

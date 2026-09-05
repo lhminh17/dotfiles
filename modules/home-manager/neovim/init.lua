@@ -10,11 +10,11 @@ vim.opt.expandtab = true
 
 vim.g.mapleader = " "
 
-require('base16-colorscheme').setup('gruvbox-dark-medium')
+require('base16-colorscheme').setup('everforest-dark-hard')
 
 require('lualine').setup({
   options = {
-    theme = 'gruvbox-material',
+    theme = 'everforest',
     icons_enabled = true,
     component_separators = { left = '|', right = '|' },
     section_separators = { left = '', right = ''},
@@ -42,7 +42,7 @@ require("oil").setup({
     "icon",
   },
   view_options = {
-    show_hidden = true,         
+    show_hidden = false,         
   },
 })
 

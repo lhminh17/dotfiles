@@ -19,5 +19,6 @@
 	myHome.ghostty.enable = true;
   # starship
   myHome.starship.enable = true;
-  
+  # sioyek
+  myHome.sioyek.enable = true;
 }
