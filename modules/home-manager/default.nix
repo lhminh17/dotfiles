@@ -6,5 +6,5 @@
 		./ghostty
 		./yazi
     ./starship
-    ];
+  ];
 }

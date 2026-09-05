@@ -10,11 +10,11 @@ vim.opt.expandtab = true
 
 vim.g.mapleader = " "
 
-require('base16-colorscheme').setup('tokyo-night-dark')
+require('base16-colorscheme').setup('gruvbox-dark-medium')
 
 require('lualine').setup({
   options = {
-    theme = 'tokyonight',
+    theme = 'gruvbox-material',
     icons_enabled = true,
     component_separators = { left = '|', right = '|' },
     section_separators = { left = '', right = ''},
@@ -35,28 +35,18 @@ vim.keymap.set('n', '<leader>fo', builtin.oldfiles, { desc = 'Find recent files'
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
-require('nvim-tree').setup({
-  view = {
-    width = 30,
-    side = 'left',
+-- Oil.nvim
+require("oil").setup({
+  default_file_explorer = true, 
+  columns = {
+    "icon",
   },
-  renderer = {
-    group_empty = true,
-    icons = {
-      show = {
-        file = true,
-        folder = true,
-        folder_arrow = true,
-        git = true,
-      },
-    },
+  view_options = {
+    show_hidden = true,         
   },
 })
 
-vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { silent = true, desc = 'Toggle File Explorer' })
-
-
-
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory with Oil" })
 
 
 

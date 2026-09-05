@@ -28,8 +28,9 @@ in
         plenary-nvim
         telescope-nvim
 
-        #neotree
-        nvim-tree-lua
+        #oil
+        oil-nvim
+
         ];
       
       extraPackages = with pkgs;[

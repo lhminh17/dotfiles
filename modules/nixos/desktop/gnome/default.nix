@@ -18,7 +18,7 @@ in{
     variant = "";
   };
 
-    environment.gnome.excludePackages = with pkgs; [
+  environment.gnome.excludePackages = with pkgs; [
     gnome-tour
     epiphany
     geary
@@ -26,9 +26,9 @@ in{
     totem
   ];
 
-    environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     gnome-tweaks
     wl-clipboard
-  ];
+    ];
  };
 }

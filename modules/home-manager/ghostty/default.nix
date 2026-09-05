@@ -15,7 +15,7 @@ in
 			enable = true;
 
 			settings = {	
-				theme = "TokyoNight";
+				theme = "Gruvbox Dark";
 
         font-family = "ComicShannsMono Nerd Font";
 
