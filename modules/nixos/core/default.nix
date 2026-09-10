@@ -42,7 +42,7 @@ in {
 	      nerd-fonts.iosevka
         nerd-fonts.comic-shanns-mono
       ];
-      fontconfig.defaultFonts.monospace = [ "ComicShannsMono Nerd Font" ];
+      fontconfig.defaultFonts.monospace = [ "JetBrainsMono Nerd Font" ];
     };
   };
 }

@@ -15,10 +15,12 @@ in
 			enable = true;
 
 			settings = {	
-				theme = "Everforest Dark Hard";
+				theme = "Rose Pine";
 
-        font-family = "ComicShannsMono Nerd Font";
-
+        font-family = "JetBrainsMono Nerd Font";
+          
+        cursor-style-blink = false;
+          
 				window-decoration = false;
 				window-padding-x = 0;
 				window-padding-y = 0;

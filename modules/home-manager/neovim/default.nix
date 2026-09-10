@@ -31,6 +31,8 @@ in
         #oil
         oil-nvim
 
+        #flash
+        flash-nvim
         ];
       
       extraPackages = with pkgs;[

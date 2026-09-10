@@ -17,6 +17,17 @@ in{
     layout = "us";
     variant = "";
   };
+  
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+      config = {
+        common = {
+          default = [ "gnome" "gtk" ];
+          "org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
+      };
+    };
+  };
 
   environment.gnome.excludePackages = with pkgs; [
     gnome-tour
@@ -29,6 +40,8 @@ in{
   environment.systemPackages = with pkgs; [
     gnome-tweaks
     wl-clipboard
+    gsettings-desktop-schemas
+    gtk3
     ];
  };
 }

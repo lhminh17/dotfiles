@@ -1,3 +1,6 @@
+vim.g.mapleader = " "
+
+
 vim.opt.number =  true
 vim.opt.relativenumber = true
 vim.opt.termguicolors = true
@@ -8,13 +11,12 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
-vim.g.mapleader = " "
 
-require('base16-colorscheme').setup('everforest-dark-hard')
+require('base16-colorscheme').setup('rose-pine')
 
 require('lualine').setup({
   options = {
-    theme = 'everforest',
+    theme = 'base16',
     icons_enabled = true,
     component_separators = { left = '|', right = '|' },
     section_separators = { left = '', right = ''},
@@ -48,8 +50,17 @@ require("oil").setup({
 
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory with Oil" })
 
+require("flash").setup({
+  modes = {
+    search = {
+      enabled = true,
+    },
+  },
+})
 
-
+vim.keymap.set({ "n", "x", "o" }, "s", function()
+  require("flash").jump()
+end, { desc = "Flash Jump" })
 
 
 
